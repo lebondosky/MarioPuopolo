@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title> Pagina portfolio </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  </head>
+  <body>
+  <header class="header clearfix" >
+  <a href="index.html" class="header_logo"> Mario Puopolo </a>
+  <a href="#" class="header_icon-bar">
+<span></span>
+<span></span>
+<span></span></a>
+    <ul class="header_menu animate">
+    <li class="header_menu_item"><a href="index.html">Home</a></li>
+    <li class="header_menu_item"><a href="portfolio.html">Portfolio</a></li>
+    <li class="header_menu_item"><a href="#about">About me</a></li>
+    <li class="header_menu_item"><a href="#Contatti">Contatti</a></li>
+    <li class="header_menu_item"><a href="#mission">Impegno</a></li>
+    </ul>
+  </header>
+  <section class="cover">
+    <div class="cover_filter"></div>
+    <div class="cover_caption">
+    <div class="cover_caption_copy">
+    <h1>Mario Puopolo</h1>
+    <h2>Back-end Developer</h2>
+    <a href="mailto:mario.puopolo@gmail.com" class="button"> Contattami </a>
+</div>
+</div>
+</section>
+<section id="mission" class="cards clearfix">
+<div class="card">
+  <img  class="card_image"src="giustizia.jpeg" alt="giustizia" width="400" height="260">
+  <div class="card_copy">
+  <h3> Giustizia </h3>
+  <p>Desidero impegnare nell'ambito della giustizia perché credo che nel mondo ci siano ancora molte ingiustizie e tutte le persone devono avere l'opportunità di difendersi</p>
+</div>
+</div>
+<div class="card">
+  <img  class="card_image"src="istruzione.jpg" alt="istruzione" width="400" height="260">
+  <div class="card_copy">
+  <h3> Istruzione di qualità </h3>
+  <p>Vorrei impegnarmi anche nell'ambito dell'istruzione per migliorarne la qualità in quanto credo che con l'istruzione possiamo combattere i soprusi e migliorare il mondo</p>
+</div>
+</div>
+<div class="card">
+  <img  class="card_image"src="genere.jpg" alt="parità_di_genere" width="400" height="260">
+  <div class="card_copy">
+  <h3> Parità di genere</h3>
+  <p>L'ultimo ambito in cui vorrei impegnarmi è la parità di genere perchè credo che nel mondo ci siano ancora molte discrepanze tra le varie persone </p>
+</div>
+</div>
+</section>
+<section class="banner clearfix">
+  <div class="banner_immage"></div>
+  <div class="banner_copy">
+  <div class="banner_copy_text">
+    <h3 id="about">Mario Puopolo</h3>
+    <h4>Back-end Developer</h4>
+    <article>Sono un ragazzo di 21 anni, abito in una piccola cittadina nell Salernitano. Mi sono diplomato presso un istituto informatico mi piacciono la programazione,la letteratura e la natura. Sto approfondendo i vari linguaggi di programazione come MySQL, PHP e Node.js. Sono una persona ambiziosa, cerco sempre di migliorarmi e di puntare al massimo, per questo ho fatto il mio mantra queste due frasi <strong> ‘Ho sempre tentato. Ho sempre fallito. Non discutere. Prova ancora. Fallisci ancora. Fallisci meglio.’</strong><strong>‘Nihil difficile volenti’</strong> (ovvero nulla è difficile per colui che vuole). Sono anche una persona che ha sempre voglia di imparare e migliorarsi.</article></div>
+</div>
+</section>
+<div class="footer">
+<div class="footer_content"></div>
+<div class="footer_bottom">
+<p id="Contatti"> Mario Puopolo </p> </div>
+<div class="contact">
+  <span><i class="fas fa-phone"></i>3477749124</span><br>
+<span><i class="fas fa-envelope-open-text"></i> mario.puopolo@gmail.com</span>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/mario.puopolo"><img class="fb"src="facebook.svg"></a>
+<a href="https://www.instagram.com/lebondosky/?hl=it"><img class="insta" src="instagram.svg"></a>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!-- volevo provare a fare apparire il menu ma non ci sono riuscito-->
+<script>
+$(document).ready(function)(){
+  $("header_icon-bar").click(function(e){
+    $(".header_menu").togleClass("is-open");
+    e.preventDefault();
+
+});
+</script>
+  </body>
+</html>
